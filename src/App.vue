@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app white shrink-on-scroll prominent>
-      <v-tabs v-model="tab" centered white icons-and-text color="basil">
+      <v-tabs centered white icons-and-text color="basil">
         <v-tabs-slider></v-tabs-slider>
 
         <v-tab to="/">

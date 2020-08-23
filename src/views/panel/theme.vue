@@ -11,11 +11,7 @@
           <v-list dense two-line>
             <v-subheader>目次</v-subheader>
             <v-list-item-group color="primary">
-              <v-list-item
-                v-for="(w, i) in works"
-                :key="i"
-                :inactive="inactive"
-              >
+              <v-list-item v-for="(w, i) in works" :key="i">
                 <v-list-item-content>
                   <v-list-item-title v-html="w.title"></v-list-item-title>
                   <v-list-item-subtitle v-html="w.grade"></v-list-item-subtitle>

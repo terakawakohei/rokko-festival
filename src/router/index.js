@@ -15,7 +15,6 @@ const routes = [
   },
   {
     path: '/panel',
-    name: 'panel',
     component: Panel,
     children: [
       // /user/:id/profileにマッチした時に2階層目のrouter-viewに表示される
