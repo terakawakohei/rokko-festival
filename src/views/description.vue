@@ -6,7 +6,7 @@
     </v-row>
     <v-row justify="center">
       <v-avatar size="250" color="grey lighten-4">
-        <img src="@/../public/logo.png" alt="avatar" />
+        <img src="@/assets/logo.png" alt="avatar" />
       </v-avatar>
     </v-row>
     <v-row justify="center">

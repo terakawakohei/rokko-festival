@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/home.vue';
-import Panel from '../views/panel/index.vue';
-import Theme from '../views/panel/theme.vue';
-import Free from '../views/panel/free.vue';
+import Home from '@/views/home.vue';
+import Panel from '@/views/panel/index.vue';
+import Theme from '@/views/panel/theme.vue';
+import Free from '@/views/panel/free.vue';
 
 Vue.use(VueRouter);
 
