@@ -31,7 +31,7 @@
           class="d-flex child-flex"
           cols="6"
         >
-          <Viewer :work="w" />
+          <Viewer :work="w" type="theme" />
         </v-col>
       </v-row>
     </v-container>

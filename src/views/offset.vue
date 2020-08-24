@@ -15,12 +15,32 @@
     <v-row justify="center" class="mb-10">
       <v-btn @click="reset()">表示</v-btn>
     </v-row>
+    <v-row justify="center" class="mb-10">
+      <v-btn @click="doReloadWithCache()">表示2</v-btn>
+    </v-row>
     <v-row justify="center">
       <a
         href="https://kucc-rokkofestival.herokuapp.com/bibi/?book=Miserables.epub"
         data-bibi="embed"
         data-bibi-style="width: 50%; height: 400px;"
-      ></a>
+        >普通</a
+      >
+    </v-row>
+    <v-row justify="center">
+      <a
+        href="https://kucc-rokkofestival.herokuapp.com/bibi/?book=Miserables.epub"
+        data-bibi="embed"
+        data-bibi-style="width: 50%; height: 400px;"
+        data-bibi-start-in-new-window="mobile"
+        >モバイルのみウィンドウ表示</a
+      >
+      <!-- <a
+        href="https://kucc-rokkofestival.herokuapp.com/bibi/?book=Miserables.epub"
+      >
+        <v-card>
+          <v-img :src="imageurl" class="grey lighten-2"> </v-img> </v-card
+      ></a> -->
+
       <!-- <div
         is="script"
         src="https://kucc-rokkofestival.herokuapp.com/bibi/and/jo.js"
@@ -36,7 +56,9 @@ export default {
   name: 'offset',
   components: {},
   data() {
-    return {};
+    return {
+      imageurl: require('@/assets/free/009sample.jpg'),
+    };
   },
   created() {
     let recaptchaScript = document.createElement('script');
@@ -49,6 +71,10 @@ export default {
   methods: {
     reset: function() {
       this.$router.go({path: this.$router.currentRoute.path, force: true});
+    },
+    doReloadWithCache() {
+      // キャッシュを利用してリロード
+      window.location.reload(false);
     },
   },
 };
