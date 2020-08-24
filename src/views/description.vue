@@ -4,16 +4,35 @@
     <v-row justify="center">
       <h1 class="display-1 font-weight-black">Web展示会へようこそ！</h1>
     </v-row>
-    <v-row justify="center">
-      <v-avatar size="250" color="grey lighten-4">
-        <img src="@/assets/logo.png" alt="avatar" />
-      </v-avatar>
-    </v-row>
-    <v-row justify="center">
-      <p class="title font-weight-bold mt-12 mb-7"></p>
+
+    <v-row justify="center" cols="6">
+      <p class="body-1 font-weight-black">
+        今年は、漫画研究会が例年行っている展示をオンラインで行います！
+      </p>
     </v-row>
 
-    <!-- </v-overlay> -->
+    <v-row justify="center">
+      <h1 class="display-1 font-weight-black">パネル展</h1>
+    </v-row>
+    <v-row justify="center">
+      <p class="body-1 font-weight-black">
+        お題に沿って描かれたテーマパネル、部員が自由にテーマを決めて描くフリーパネルの二種類があります！
+      </p>
+    </v-row>
+    <v-row justify="space-around">
+      <v-avatar color="grey darken-2" size="100">
+        <v-icon>mdi-star-four-points-outline</v-icon>
+      </v-avatar>
+      <p class="body-1 font-weight-black">
+        テーマ : 「星」
+      </p>
+    </v-row>
+    <v-row justify="center">
+      <p class="title font-weight-bold mt-12 mb-7">オフセット本</p>
+      <v-avatar color="grey darken-2" size="100">
+        <v-icon>mdi-emoticon-devil</v-icon>
+      </v-avatar>
+    </v-row>
   </v-container>
 </template>
 

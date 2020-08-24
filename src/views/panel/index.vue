@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row justify="center">
-      <h1 class="display-1 font-weight-black padding">
+      <h1 class="display-1 font-weight-black pt-6">
         Webパネル展
       </h1>
     </v-row>

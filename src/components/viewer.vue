@@ -22,9 +22,14 @@
         <v-divider class="mx-4"></v-divider>
         <v-card-text>
           <v-row justify="center">
+            {{ work.grade }}回生 {{ work.penname }}
+          </v-row>
+          <v-row justify="center">
+            {{ work.tool }}
+          </v-row>
+          <v-row justify="center">
             {{ work.caption }}
           </v-row>
-          <v-row justify="center"> {{ work.grade }}年度入学 </v-row>
         </v-card-text>
       </v-card>
     </v-dialog>
