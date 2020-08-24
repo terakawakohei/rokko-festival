@@ -10,6 +10,22 @@
         新歓アカウントでは、#KUCC深夜の真剣お絵描き60分勝負というタグで部員のイラストがみられます！
       </p>
     </v-row>
+    <v-row justify="center" cols="6">
+      <a
+        class="twitter-timeline"
+        data-width="400"
+        data-height="600"
+        data-theme="light"
+        href="https://twitter.com/kucc_shinkan20?ref_src=twsrc%5Etfw"
+        >Tweets by kucc_shinkan20</a
+      >
+      <div
+        is="script"
+        async
+        src="https://platform.twitter.com/widgets.js"
+        charset="utf-8"
+      ></div>
+    </v-row>
   </v-container>
 </template>
 

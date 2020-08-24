@@ -2,33 +2,65 @@
   {
     "grade": 3,
     "penname": "おだやかじんせい",
-    "title": "ショーウィンドウ",
+    "title": "タイトル",
     "tool": "photoshop",
-    "caption": "真夏過ぎ",
-    "fileName": "スカートsample.jpg"
+    "caption": "キャプション",
+    "fileName": "すいちゅうexample.jpg"
   },
   {
     "grade": 3,
     "penname": "おだやかじんせい",
-    "title": "「もっと笑って！」",
+    "title": "タイトル",
     "tool": "photoshop",
-    "caption": "ああああああああああああああああああああああああああああああああああああああ",
+    "caption": "キャプション",
     "fileName": "花畑sample.jpg"
   },
   {
     "grade": 3,
     "penname": "おだやかじんせい",
-    "title": "「もっと笑って！」",
+    "title": "タイトル",
     "tool": "photoshop",
-    "caption": "",
-    "fileName": "花畑sample.jpg"
+    "caption": "キャプション",
+    "fileName": "軍隊sample.jpg"
   },
   {
     "grade": 3,
     "penname": "おだやかじんせい",
-    "title": "「もっと笑って！」",
+    "title": "タイトル",
     "tool": "photoshop",
-    "caption": "",
-    "fileName": "花畑sample.jpg"
+    "caption": "キャプション",
+    "fileName": "刑務城sample.jpg"
+  },
+  {
+    "grade": 3,
+    "penname": "おだやかじんせい",
+    "title": "タイトル",
+    "tool": "photoshop",
+    "caption": "キャプション",
+    "fileName": "古写真sample.jpg"
+  },
+  {
+    "grade": 3,
+    "penname": "おだやかじんせい",
+    "title": "タイトル",
+    "tool": "photoshop",
+    "caption": "キャプション",
+    "fileName": "図書館sample.jpg"
+  },
+  {
+    "grade": 3,
+    "penname": "おだやかじんせい",
+    "title": "タイトル",
+    "tool": "photoshop",
+    "caption": "キャプション",
+    "fileName": "戦sample.jpg"
+  },
+  {
+    "grade": 3,
+    "penname": "おだやかじんせい",
+    "title": "タイトル",
+    "tool": "photoshop",
+    "caption": "hghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghg",
+    "fileName": "日差しsample.jpg"
   }
 ]
