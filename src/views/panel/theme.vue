@@ -53,9 +53,7 @@ export default {
   },
   methods: {
     loadImg(fileName) {
-      //   return `@/assets/theme/${url}`;
       return require(`@/assets/theme/${fileName}`);
-      //   return '@/public/theme/スカートsample.jpg';
     },
   },
   computed: {

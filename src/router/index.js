@@ -4,6 +4,7 @@ import Home from '@/views/home.vue';
 import Panel from '@/views/panel/index.vue';
 import Theme from '@/views/panel/theme.vue';
 import Free from '@/views/panel/free.vue';
+import Offset from '@/views/offset.vue';
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,11 @@ const routes = [
       // /user/:id の場合に2階層目に表示させたい場合
       {path: '', component: Theme},
     ],
+  },
+  {
+    path: '/offset',
+    name: 'offset',
+    component: Offset,
   },
 ];
 

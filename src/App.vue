@@ -14,7 +14,7 @@
           <v-icon>mdi-brush</v-icon>
         </v-tab>
 
-        <v-tab>
+        <v-tab to="/offset">
           オフセット本
           <v-icon>mdi-book-open-blank-variant</v-icon>
         </v-tab>
