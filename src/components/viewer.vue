@@ -47,12 +47,11 @@ export default {
   }),
   props: {
     work: Object,
+    type: String,
   },
   methods: {
     loadImg(fileName) {
-      //   return `@/assets/theme/${url}`;
-      return require(`@/assets/theme/${fileName}`);
-      //   return '@/public/theme/スカートsample.jpg';
+      return require(`@/assets/${this.type}/${fileName}`);
     },
   },
   computed: {
