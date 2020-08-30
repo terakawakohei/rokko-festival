@@ -13,24 +13,92 @@
       </v-card-text>
     </v-card>
 
-    <v-dialog v-model="dialog" scrollable max-width="80%">
+    <v-dialog v-model="dialog" max-width="80%">
       <v-card>
-        <v-img :src="loadImg(work.fileName)" class="grey lighten-2"> </v-img>
+        <v-img
+          max-height="500"
+          contain
+          :src="loadImg(work.fileName)"
+          class="grey lighten-2"
+        >
+        </v-img>
         <v-row justify="center">
           <v-card-title>{{ work.title }}</v-card-title>
         </v-row>
         <v-divider class="mx-4"></v-divider>
-        <v-card-text>
+        <v-card-text class="pb-0">
           <v-row justify="center">
             {{ work.grade }}回生 {{ work.penname }}
           </v-row>
           <v-row justify="center">
             {{ work.tool }}
           </v-row>
-          <v-row justify="center">
+          <v-divider class=" mb-4"></v-divider>
+          <v-row class="ml-2">
             {{ work.caption }}
           </v-row>
+          <v-divider class="mt-4"></v-divider>
+          <v-row justify="center">
+            <v-btn @click="snackbar = true" icon color="deep-orange">
+              <v-icon>mdi-vote</v-icon>
+              投票する
+            </v-btn>
+          </v-row>
+          <v-snackbar v-model="snackbar" :timeout="timeout">
+            投票しました
+
+            <template v-slot:action="{attrs}">
+              <v-btn color="blue" text v-bind="attrs" @click="snackbar = false">
+                閉じる
+              </v-btn>
+            </template>
+          </v-snackbar>
         </v-card-text>
+        <v-card-actions>
+          <!-- <v-btn color="blue darken-1" text @click="dialog = false"
+            >閉じる</v-btn
+          > -->
+          <v-spacer></v-spacer>
+          <v-btn text small disabled>
+            コメントする
+          </v-btn>
+          <v-btn icon @click="show = !show">
+            <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+          </v-btn>
+        </v-card-actions>
+        <v-expand-transition>
+          <div v-show="show">
+            <v-divider></v-divider>
+            <v-textarea
+              class="pt-2"
+              filled
+              auto-grow
+              label="コメント"
+              rows="2"
+              row-height="20"
+              v-model="comment"
+            ></v-textarea>
+            <v-row justify="center">
+              <v-btn @click="sendComment()" icon color="deep-orange">
+                <v-icon>mdi-send</v-icon>
+              </v-btn>
+            </v-row>
+            <v-snackbar v-model="snackbar2" :timeout="timeout">
+              送信しました
+
+              <template v-slot:action="{attrs}">
+                <v-btn
+                  color="blue"
+                  text
+                  v-bind="attrs"
+                  @click="snackbar2 = false"
+                >
+                  閉じる
+                </v-btn>
+              </template>
+            </v-snackbar>
+          </div>
+        </v-expand-transition>
       </v-card>
     </v-dialog>
   </div>
@@ -43,17 +111,49 @@ import theme from '@/assets/theme/theme.json';
 export default {
   data: () => ({
     dialog: false,
+    snackbar: false,
+    snackbar2: false,
+    show: false,
+    timeout: 3000,
     works: theme,
+    comment: '',
   }),
   props: {
     work: Object,
+    workId: Number,
     type: String,
   },
   methods: {
     loadImg(fileName) {
       return require(`@/assets/${this.type}/${fileName}`);
     },
+    sendComment() {
+      this.axios.post(
+        `https://rokko-festival-server.herokuapp.com/comment/${this.workId}/${this.comment}`
+      );
+      this.snackbar2 = true;
+      this.comment = '';
+    },
   },
+  mounted: function() {
+    console.log('見えて欲しい');
+    this.axios
+      .get('https://rokko-festival-server.herokuapp.com/products')
+      .then((response) => console.log(response))
+      .catch((response) => console.log(response));
+  },
+  // async comment(words) {
+  // 	await this.$axios.put('/api/v1/student/' + this.data.StudentID, {
+  // 		DeletedAt: null,
+  // 	});
+  // 	this.$notify({
+  // 		type: 'success',
+  // 		title: '成功しました',
+  // 	});
+  // 	this.showing = false;
+  // 	this.$store.dispatch('downloadResource', 'Student');
+  // 	this.$eventBus.$emit('reload');
+  // },
   computed: {
     shortenedContent: function() {
       let maxlength = 100;
@@ -66,4 +166,8 @@ export default {
   },
 };
 </script>
-<style></style>
+<style scoped>
+.v-data-table td {
+  white-space: pre-line;
+}
+</style>

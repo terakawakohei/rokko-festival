@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "grade": 3,
     "penname": "おだやかじんせい",
     "title": "タイトル",
@@ -8,6 +9,7 @@
     "fileName": "すいちゅうexample.jpg"
   },
   {
+    "id": 2,
     "grade": 3,
     "penname": "おだやかじんせい",
     "title": "タイトル",
@@ -16,6 +18,7 @@
     "fileName": "花畑sample.jpg"
   },
   {
+    "id": 3,
     "grade": 3,
     "penname": "おだやかじんせい",
     "title": "タイトル",
@@ -24,6 +27,7 @@
     "fileName": "軍隊sample.jpg"
   },
   {
+    "id": 4,
     "grade": 3,
     "penname": "おだやかじんせい",
     "title": "タイトル",
@@ -32,6 +36,7 @@
     "fileName": "刑務城sample.jpg"
   },
   {
+    "id": 5,
     "grade": 3,
     "penname": "おだやかじんせい",
     "title": "タイトル",
@@ -40,6 +45,7 @@
     "fileName": "古写真sample.jpg"
   },
   {
+    "id": 6,
     "grade": 3,
     "penname": "おだやかじんせい",
     "title": "タイトル",
@@ -48,6 +54,7 @@
     "fileName": "図書館sample.jpg"
   },
   {
+    "id": 7,
     "grade": 3,
     "penname": "おだやかじんせい",
     "title": "タイトル",
@@ -56,11 +63,12 @@
     "fileName": "戦sample.jpg"
   },
   {
+    "id": 8,
     "grade": 3,
     "penname": "おだやかじんせい",
     "title": "タイトル",
     "tool": "photoshop",
-    "caption": "hghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghg",
+    "caption": "hghghghghghghghghghghghghghg\nhghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghg",
     "fileName": "日差しsample.jpg"
   }
 ]

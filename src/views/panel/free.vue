@@ -31,7 +31,7 @@
           class="d-flex child-flex"
           cols="6"
         >
-          <Viewer :work="w" type="free" />
+          <Viewer :work="w" :workId="w.id" type="free" />
         </v-col>
       </v-row>
     </v-container>

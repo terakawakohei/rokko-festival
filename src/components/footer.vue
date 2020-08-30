@@ -1,5 +1,24 @@
 <template>
-  <v-container py-10>
+  <v-footer elevation="5" white padless>
+    <v-col class="text-center basil" cols="12">
+      <a href="https://twitter.com/kobe_u_cc">
+        <v-icon>mdi-twitter</v-icon>
+      </a>
+    </v-col>
+
+    <!-- <v-card-text class="basil--text pt-0">
+        新歓活動中！
+      </v-card-text> -->
+    <v-col class="text-center basil small caption" cols="12">
+      新歓活動中！
+    </v-col>
+    <v-divider></v-divider>
+    <v-col class="text-center basil small font-italic text-caption" cols="12">
+      ⓒ{{ new Date().getFullYear() }} —
+      <strong>神戸大学漫画研究会</strong>
+    </v-col>
+  </v-footer>
+  <!-- <v-container py-10>
     <v-row justify="center" cols="3">
       <a href="https://twitter.com/kobe_u_cc">
         <v-icon>mdi-twitter</v-icon>
@@ -10,7 +29,7 @@
         ⓒ 2020 神戸大学漫画研究会
       </p>
     </v-row>
-  </v-container>
+  </v-container> -->
 </template>
 
 <script>
