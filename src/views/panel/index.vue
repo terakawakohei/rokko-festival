@@ -8,13 +8,15 @@
 
     <router-view />
 
-    <v-bottom-navigation app>
+    <v-bottom-navigation app grow color="teal">
       <v-btn to="/panel">
         <span>テーマパネル</span>
+        <v-icon>mdi-weather-night</v-icon>
       </v-btn>
 
       <v-btn to="panel/free">
         <span>フリーパネル</span>
+        <v-icon>mdi-brush</v-icon>
       </v-btn>
     </v-bottom-navigation>
   </div>

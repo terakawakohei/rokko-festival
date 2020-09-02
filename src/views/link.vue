@@ -13,7 +13,7 @@
     <v-row justify="center" cols="6">
       <a
         class="twitter-timeline"
-        data-width="400"
+        data-width="200"
         data-height="600"
         data-theme="light"
         href="https://twitter.com/kucc_shinkan20?ref_src=twsrc%5Etfw"
