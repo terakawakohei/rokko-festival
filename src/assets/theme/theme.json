@@ -1,74 +1,110 @@
 [
   {
     "id": 1,
-    "grade": 3,
-    "penname": "おだやかじんせい",
-    "title": "タイトル",
-    "tool": "photoshop",
-    "caption": "キャプション",
-    "fileName": "すいちゅうexample.jpg"
+    "grade": "2",
+    "penname": "霜月",
+    "title": "同じ星の空",
+    "tool": "iPhoneとiPadのProcreate",
+    "caption": "星空って描けないですよね...無理でした...",
+    "fileName": "霜月theme.jpg"
   },
   {
     "id": 2,
-    "grade": 3,
-    "penname": "おだやかじんせい",
-    "title": "タイトル",
-    "tool": "photoshop",
-    "caption": "キャプション",
-    "fileName": "花畑sample.jpg"
+    "grade": "2",
+    "penname": "がみすけ",
+    "title": "星々を見て",
+    "tool": "CLIPSTUDIO",
+    "caption": "CLIPSTUDIOを使用し、基本ツールは柔らかい描写に合わせ線画に鉛筆R、塗りにバケツと濃い水彩を使いました。今回はテーマが「星」ということだったのですが、星を眺める女の子を大きく描いた構図にしたかったので、瞳に星空を映し出すことでテーマ性を出してみました。",
+    "fileName": "がみすけtheme.jpg"
   },
   {
     "id": 3,
-    "grade": 3,
-    "penname": "おだやかじんせい",
-    "title": "タイトル",
-    "tool": "photoshop",
-    "caption": "キャプション",
-    "fileName": "軍隊sample.jpg"
+    "grade": "1",
+    "penname": "のか",
+    "title": "コレクション",
+    "tool": "CLIPSTUDIO",
+    "caption": "星って食べたら甘そうだなあと思ってた時期が私にもありました。金平糖で我慢します。",
+    "fileName": "のかthema.jpg"
   },
   {
     "id": 4,
-    "grade": 3,
-    "penname": "おだやかじんせい",
-    "title": "タイトル",
-    "tool": "photoshop",
-    "caption": "キャプション",
-    "fileName": "刑務城sample.jpg"
+    "grade": "2",
+    "penname": "シノバ",
+    "title": "乙女座",
+    "tool": "CLIPSTUDIO",
+    "caption": "乙女座はデメテルが元で、豊穣を司るらしいです",
+    "fileName": "シノバtheme.jpg"
   },
   {
     "id": 5,
-    "grade": 3,
-    "penname": "おだやかじんせい",
-    "title": "タイトル",
-    "tool": "photoshop",
-    "caption": "キャプション",
-    "fileName": "古写真sample.jpg"
+    "grade": "4",
+    "penname": "かはら",
+    "title": "星の海",
+    "tool": "CLIPSTUDIO",
+    "caption": "星の夢に抱かれておやすみなさい",
+    "fileName": "かはらthema.jpg"
   },
   {
     "id": 6,
-    "grade": 3,
-    "penname": "おだやかじんせい",
-    "title": "タイトル",
-    "tool": "photoshop",
-    "caption": "キャプション",
-    "fileName": "図書館sample.jpg"
+    "grade": "2",
+    "penname": "れん",
+    "title": "星々瞬く夜に",
+    "tool": "CLIP STUDIO PAINT",
+    "caption": "「星」→「夜空」→「魔法使いが飛んでる」というイメージからできた構図です。楽しかったです。",
+    "fileName": "れんtheme.jpg"
   },
   {
     "id": 7,
-    "grade": 3,
-    "penname": "おだやかじんせい",
-    "title": "タイトル",
-    "tool": "photoshop",
-    "caption": "キャプション",
-    "fileName": "戦sample.jpg"
+    "grade": "M1",
+    "penname": "さくくね",
+    "title": "黒星を喫する",
+    "tool": "CLIP STUDIO PAINT",
+    "caption": "『遂に私の価値は0円になったらしい。生きてるだけで敗北している様なものだね。』",
+    "fileName": "さくくねtheme.jpg"
   },
   {
     "id": 8,
-    "grade": 3,
-    "penname": "おだやかじんせい",
-    "title": "タイトル",
+    "grade": "2",
+    "penname": "すみか",
+    "title": "✨",
     "tool": "photoshop",
-    "caption": "hghghghghghghghghghghghghghg\nhghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghg",
-    "fileName": "日差しsample.jpg"
+    "caption": "",
+    "fileName": "すみかtheme.jpg"
+  },
+  {
+    "id": 9,
+    "grade": "2",
+    "penname": "S氏",
+    "title": "みずがめ通りの夜と星",
+    "tool": "MediBang Paint",
+    "caption": "星座の名前が付いた通りが縦横に走る街…という感じの世界観になってます。みずがめ座なのは僕の星座がみずがめ座だからです。奥行きを感じられる構図を描きたかったので描きました。建物に力を入れて描いたのは初めてなので良い経験になったと思います！",
+    "fileName": "S氏theme.jpg"
+  },
+  {
+    "id": 10,
+    "grade": "4",
+    "penname": "しも。",
+    "title": "ダイダッソウ",
+    "tool": "CLIPSTUDIO",
+    "caption": "デジタル画材を用いて完成させたはじめての大きな作品です。\n拙い部分もありますが、温かい目で見てもらえると嬉しいです。",
+    "fileName": "しも。theme.jpeg"
+  },
+  {
+    "id": 11,
+    "grade": "2",
+    "penname": "あかちゃん",
+    "title": "餅つきに飽きたウサギ",
+    "tool": "色鉛筆・ボールペン",
+    "caption": "餅つきに飽きてしまった月のウサギを描きました、地球も星やしいけると思っていましたが、地球を描くのが思いのほか大変でした。",
+    "fileName": "あかちゃんtheme.jpg"
+  },
+  {
+    "id": 12,
+    "grade": "2",
+    "penname": "Beorinn",
+    "title": "月の巫女",
+    "tool": "",
+    "caption": "最初は星に線をつなげて魔方陣を描くような形にしようと思っていましたが、月も星に含まれると思ってこっちに変えました。杖の装飾は迷走した結果なので、特に意味はないです。デジタルで書きました。",
+    "fileName": "Beorinntheme.jpg"
   }
 ]

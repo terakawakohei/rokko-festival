@@ -1,42 +1,110 @@
 [
   {
-    "grade": 3,
-    "penname": "おだやかじんせい",
-    "title": "タイトル",
-    "tool": "photoshop",
-    "caption": "キャプション",
-    "fileName": "スカートsample.jpg"
+    "id": 1,
+    "grade": "3",
+    "penname": "みとり",
+    "title": "シークレット・ドレスアップ",
+    "tool": "CLIPSTUDIO",
+    "caption": "描きたいものだけ描きました。\n背面に花柄がないのはわざとです。そういうデザイン・構造のものなので……。",
+    "fileName": "みとりfree.jpg"
   },
   {
-    "grade": 3,
-    "penname": "おだやかじんせい",
-    "title": "タイトル",
-    "tool": "photoshop",
-    "caption": "キャプション",
-    "fileName": "001sample.jpg"
+    "id": 2,
+    "grade": "3",
+    "penname": "どっともち",
+    "title": "こころ踊る瞬間！",
+    "tool": "Procreate",
+    "caption": "美味しいね",
+    "fileName": "どっともちfree.jpg"
   },
   {
-    "grade": 3,
-    "penname": "おだやかじんせい",
-    "title": "タイトル",
-    "tool": "photoshop",
-    "caption": "キャプション",
-    "fileName": "004sample.jpg"
+    "id": 3,
+    "grade": "3",
+    "penname": "佐藤",
+    "title": "夜",
+    "tool": "CLIPSTUDIO",
+    "caption": "夜の街を描きました。\n自分の出したい雰囲気を表現するのが難しかったです。",
+    "fileName": "佐藤free.jpg"
   },
   {
-    "grade": 3,
-    "penname": "おだやかじんせい",
-    "title": "タイトル",
-    "tool": "photoshop",
-    "caption": "キャプション",
-    "fileName": "009sample.jpg"
+    "id": 4,
+    "grade": "3",
+    "penname": "ノルン",
+    "title": "ろりろり更衣室",
+    "tool": "色鉛筆（これしか持っていない人）",
+    "caption": "経験上、女子小学生はみんなで更衣室に入りがち。\n絵が雑なのは許してください。",
+    "fileName": "ノルンfree.jpg"
   },
   {
-    "grade": 3,
+    "id": 5,
+    "grade": "3",
     "penname": "おだやかじんせい",
-    "title": "タイトル",
+    "title": "NORCOLD",
     "tool": "photoshop",
-    "caption": "キャプション",
-    "fileName": "顔.jpg"
+    "caption": "様々な状況でお使いいただけます",
+    "fileName": "おだやかじんせいfree.jpg"
+  },
+  {
+    "id": 6,
+    "grade": "3",
+    "penname": "おだやかじんせい",
+    "title": "(^-^)",
+    "tool": "photoshop",
+    "caption": "迚ｹ縺ｫ諢丞袖縺ｯ縺ｪ縺",
+    "fileName": "おだやかじんせいfree2.jpg"
+  },
+  {
+    "id": 7,
+    "grade": "3",
+    "penname": "ミヨシノ",
+    "title": "Wanderer",
+    "tool": "CLIPSTUDIO",
+    "caption": "さあ、行こう。君の冒険は、ここから始まる。",
+    "fileName": "ミヨシノfree.jpg"
+  },
+  {
+    "id": 8,
+    "grade": "3",
+    "penname": "きみどり",
+    "title": "「困ります！ウリボーネットさん」",
+    "tool": "CLIPSTUDIO",
+    "caption": "「試験前やレポート提出前、大事な時に突如として繋がらなくなるあの現象、その原因はなんとウリボーネットさん⁉︎\n神大生を巻き込んだ青春ドタバタキャンパスライフがついに幕を開ける！！」\n...っていうノリで描きました\n本編は誰かお願いします",
+    "fileName": "きみどりfree.jpg"
+  },
+  {
+    "id": 9,
+    "grade": "3",
+    "penname": "きみどり",
+    "title": "猫鬼(びょうき)",
+    "tool": "CLIPSTUDIO",
+    "caption": "こう...誰かに刺さるかなーと思って\nイロイロ詰め込んでみました\n刺さった人は多分”びょうき”ですのでお近くの病院まで",
+    "fileName": "きみどりfree2.jpg"
+  },
+  {
+    "id": 10,
+    "grade": "3",
+    "penname": "まんまる",
+    "title": "マジカル美少女",
+    "tool": "CLIPSTUDIO",
+    "caption": "マジカルな美少女です",
+    "fileName": "まんまるfree.jpg"
+  },
+  {
+    "id": 11,
+    "grade": "3",
+    "penname": "かしわ",
+    "title": "シマエナガリース",
+    "tool": "",
+    "caption": "いつかパネル展にシマエナガの絵を出したいと思っていたのでとても満足です！",
+    "fileName": "かしわfree.jpg"
+  },
+  {
+    "id": 12,
+    "grade": "3",
+    "penname": "ゆう",
+    "title": "推し君しか勝たん",
+    "tool": "Clip Studio",
+    "caption": "メンヘラな女の子が描きたかったので描きました！",
+    "fileName": "ゆうfree.jpg"
   }
 ]

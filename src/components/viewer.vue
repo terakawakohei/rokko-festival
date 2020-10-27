@@ -13,7 +13,7 @@
       </v-card-text>
     </v-card>
 
-    <v-dialog v-model="dialog" max-width="100%">
+    <v-dialog v-model="dialog" max-width="500">
       <v-card>
         <v-img
           max-height="500"
@@ -33,7 +33,7 @@
           <v-row justify="center">
             {{ work.tool }}
           </v-row>
-          <v-divider class=" mb-4 my-2"></v-divider>
+          <v-divider class="mb-4 my-2"></v-divider>
           <v-row class="ml-2">
             {{ work.caption }}
           </v-row>
@@ -42,17 +42,17 @@
             <v-btn
               @click="vote()"
               :disabled="voteDisabled"
-              icon
-              color="deep-orange"
+              outlined
+              color="#F99F48"
             >
               <v-icon>mdi-vote</v-icon>
-              投票する
+              <div>投票する</div>
             </v-btn>
           </v-row>
           <v-snackbar v-model="snackbar" :timeout="timeout">
             投票しました
 
-            <template v-slot:action="{attrs}">
+            <template v-slot:action="{ attrs }">
               <v-btn color="blue" text v-bind="attrs" @click="snackbar = false">
                 閉じる
               </v-btn>
@@ -61,6 +61,7 @@
         </v-card-text>
         <v-divider></v-divider>
         <v-textarea
+          prepend-inner-icon="mdi-comment"
           class="pt-2 mx-2"
           filled
           auto-grow
@@ -69,20 +70,22 @@
           row-height="20"
           v-model="comment"
         ></v-textarea>
-        <v-row justify="center">
-          <v-btn
-            @click="sendComment()"
-            :disabled="sendDisabled"
-            icon
-            color="deep-orange"
-          >
-            <v-icon>mdi-send</v-icon>
-          </v-btn>
-        </v-row>
+
+        <v-btn
+          v-if="comment != ''"
+          @click="sendComment()"
+          :disabled="sendDisabled"
+          block
+          color="#F99F48"
+        >
+          <span class="white--text">送信する</span>
+          <v-icon color="white">mdi-send</v-icon>
+        </v-btn>
+
         <v-snackbar v-model="snackbar2" :timeout="timeout">
           送信しました
 
-          <template v-slot:action="{attrs}">
+          <template v-slot:action="{ attrs }">
             <v-btn color="blue" text v-bind="attrs" @click="snackbar2 = false">
               閉じる
             </v-btn>
@@ -106,7 +109,7 @@
 
 <script>
 // @ is an alias to /src
-import theme from '@/assets/theme/theme.json';
+import theme from "@/assets/theme/theme.json";
 
 export default {
   data: () => ({
@@ -117,7 +120,7 @@ export default {
     sendDisabled: false,
     timeout: 3000,
     works: theme,
-    comment: '',
+    comment: "",
   }),
   props: {
     work: Object,
@@ -133,20 +136,20 @@ export default {
       this.voteDisabled = true;
     },
     sendComment() {
-      if (this.comment != '') {
+      if (this.comment != "") {
         this.axios.post(
           `https://rokko-festival-server.herokuapp.com/comment/${this.workId}/${this.comment}`
         );
         this.snackbar2 = true;
         this.sendDisabled = true;
-        this.comment = '';
+        this.comment = "";
       }
     },
   },
-  mounted: function() {
-    console.log('見えて欲しい');
+  mounted: function () {
+    console.log("見えて欲しい");
     this.axios
-      .get('https://rokko-festival-server.herokuapp.com/products')
+      .get("https://rokko-festival-server.herokuapp.com/products")
       .then((response) => console.log(response))
       .catch((response) => console.log(response));
   },
@@ -163,12 +166,12 @@ export default {
   // 	this.$eventBus.$emit('reload');
   // },
   computed: {
-    shortenedContent: function() {
+    shortenedContent: function () {
       let maxlength = 100;
       if (this.content.length <= maxlength) {
         return this.content;
       } else {
-        return this.content.substr(0, maxlength - 10) + '...(続きを読む）';
+        return this.content.substr(0, maxlength - 10) + "...(続きを読む）";
       }
     },
   },

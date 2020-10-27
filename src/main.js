@@ -5,10 +5,12 @@ import store from './store';
 import vuetify from './plugins/vuetify';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
+import smoothScroll from 'vue-smoothscroll'
 
 Vue.config.productionTip = false;
 
 Vue.use(VueAxios, axios);
+Vue.use(smoothScroll)
 
 new Vue({
   router,

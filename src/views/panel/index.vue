@@ -1,14 +1,12 @@
 <template>
   <div>
     <v-row justify="center">
-      <h1 class="display-1 font-weight-black pt-6">
-        Webパネル展
-      </h1>
+      <h1 class="display-1 font-weight-black pt-6">Webパネル展</h1>
     </v-row>
 
     <router-view />
 
-    <v-bottom-navigation app grow color="teal">
+    <v-bottom-navigation app grow background-color="#78BBE6" color="#1B435D">
       <v-btn to="/panel">
         <span>テーマパネル</span>
         <v-icon>mdi-weather-night</v-icon>
@@ -26,8 +24,8 @@
 // @ is an alias to /src
 
 export default {
-  name: 'panel',
-  data: function() {
+  name: "panel",
+  data: function () {
     return {};
   },
 
