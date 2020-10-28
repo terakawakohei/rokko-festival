@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app white shrink-on-scroll prominent>
-      <v-tabs centered white icons-and-text color="basil">
+      <v-tabs centered white icons-and-text color="#78BBE6">
         <v-tabs-slider></v-tabs-slider>
 
         <v-tab to="/">
@@ -19,7 +19,7 @@
         </v-tab>
 
         <v-tab to="/offset">
-          オフセット本
+          部誌
           <v-icon>mdi-book-open-blank-variant</v-icon>
         </v-tab>
       </v-tabs>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-container>
     <v-row justify="center">
       <h1 class="display-1 font-weight-black padding">テーマパネル</h1>
     </v-row>
@@ -44,7 +44,7 @@
         </v-col>
       </v-row>
     </v-container>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -74,16 +74,6 @@ export default {
         1000,
         "num"
       );
-    },
-  },
-  computed: {
-    shortenedContent: function() {
-      let maxlength = 100;
-      if (this.content.length <= maxlength) {
-        return this.content;
-      } else {
-        return this.content.substr(0, maxlength - 10) + "...(続きを読む）";
-      }
     },
   },
 };

@@ -1,21 +1,106 @@
 <template>
   <div>
-    <v-row justify="center" class="py-10">
-      <h1 class="display-1 font-weight-black">オフセット本</h1>
-    </v-row>
-    <v-row justify="center">
-      <v-card
-        href="https://kucc-rokkofestival.herokuapp.com/bibi/?book=Miserables.epub"
-        width="50%"
-      >
-        <v-img :src="loadImg('みーはー表紙.jpg')"></v-img>
-      </v-card>
-    </v-row>
-    <v-row justify="center">
-      <v-card width="50%">
-        <v-img :src="loadImg('voom表紙.jpg')"></v-img>
-      </v-card>
-    </v-row>
+    <v-sheet class="py-10 px-8 my-16" color="grey lighten-3">
+      <v-row justify="center">
+        <v-col cols="9">
+          <div class="font-weight-black text-center text-h4">
+            漫研部誌
+          </div>
+        </v-col>
+        <v-col cols="11">
+          <p class=" font-weight-black text-center">
+            例年、部員描いたイラストや漫画をオフセット本として六甲祭で販売しています！
+          </p>
+        </v-col>
+      </v-row>
+
+      <v-row justify="space-around">
+        <v-col cols="12" md="5">
+          <v-sheet
+            class="pa-10"
+            color="white lighten-3"
+            rounded="xl"
+            height="200"
+          >
+            <div></div>
+            <v-sheet rounded="xl" class="mx-auto" height="100" width="100">
+              <v-row align="center" justify="space-around">
+                <v-icon x-large color="orange">mdi-emoticon-devil</v-icon>
+              </v-row></v-sheet
+            >
+
+            <div></div>
+            <p class=" font-weight-black text-center">
+              今年のテーマは「悪魔」です
+            </p>
+          </v-sheet>
+        </v-col>
+      </v-row>
+    </v-sheet>
+
+    <v-sheet class="py-10 px-8" color="grey lighten-3">
+      <!-- <v-overlay absolute> -->
+      <v-row justify="center">
+        <v-col cols="9">
+          <div class="font-weight-black text-center text-h4">
+            パネル展
+          </div>
+        </v-col>
+        <v-col cols="11">
+          <p class=" font-weight-black text-center">
+            お題に沿って描かれたテーマパネル、部員が自由にテーマを決めて描くフリーパネルの二種類があります！
+          </p>
+        </v-col>
+      </v-row>
+
+      <v-row justify="space-around">
+        <v-col cols="12" md="5">
+          <v-sheet
+            class="pa-10"
+            color="white lighten-3"
+            rounded="xl"
+            height="500"
+          >
+            <div class=" font-weight-black text-center text-h6 pb-4">
+              みーはー
+            </div>
+            <div></div>
+
+            <v-row align="center" justify="space-around">
+              <v-card
+                href="https://kucc-rokkofestival.herokuapp.com/bibi/?book=Miserables.epub"
+                width="50%"
+              >
+                <v-img :src="loadImg('みーはー表紙.jpg')"></v-img>
+              </v-card>
+            </v-row>
+          </v-sheet>
+        </v-col>
+        <v-col cols="12" md="5">
+          <v-sheet
+            class="pa-10"
+            color="white lighten-3"
+            rounded="xl"
+            height="500"
+          >
+            <div class=" font-weight-black text-center text-h6 pb-4">
+              voom+
+            </div>
+            <div></div>
+
+            <v-row align="center" justify="space-around">
+              <v-card
+                href="https://kucc-rokkofestival.herokuapp.com/bibi/?book=Miserables.epub"
+                width="50%"
+              >
+                <v-img :src="loadImg('voom表紙.jpg')"></v-img>
+              </v-card>
+            </v-row>
+          </v-sheet>
+        </v-col>
+      </v-row>
+    </v-sheet>
+
     <!-- <a
       href="http://localhost:8081/bibi/?book=maruyama.epub"
       data-bibi="embed"
@@ -79,7 +164,7 @@ export default {
     loadImg(fileName) {
       return require(`@/assets/${fileName}`);
     },
-    reset: function () {
+    reset: function() {
       this.$router.go({ path: this.$router.currentRoute.path, force: true });
     },
     doReloadWithCache() {
