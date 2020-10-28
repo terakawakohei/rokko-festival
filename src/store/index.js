@@ -1,11 +1,12 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from "vue";
+import Vuex from "vuex";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
     Loading: false,
+    menuSelection: null,
   },
   mutations: {
     loadStart(state) {
@@ -13,6 +14,9 @@ export default new Vuex.Store({
     },
     endLoad(state) {
       state.Loading = false;
+    },
+    changeMenuSelection: function(state, workId) {
+      state.menuSelection = workId;
     },
   },
   actions: {},

@@ -13,10 +13,10 @@
       </v-card-text>
     </v-card>
 
-    <v-dialog v-model="dialog" max-width="500">
+    <v-dialog v-model="dialog" max-width="700">
       <v-card>
         <v-img
-          max-height="500"
+          max-height="600"
           contain
           :src="loadImg(work.fileName)"
           class="grey lighten-2"
@@ -146,7 +146,7 @@ export default {
       }
     },
   },
-  mounted: function () {
+  mounted: function() {
     console.log("見えて欲しい");
     this.axios
       .get("https://rokko-festival-server.herokuapp.com/products")
@@ -166,13 +166,21 @@ export default {
   // 	this.$eventBus.$emit('reload');
   // },
   computed: {
-    shortenedContent: function () {
+    menuSelection: function() {
+      return this.$store.state.menuSelection;
+    },
+    shortenedContent: function() {
       let maxlength = 100;
       if (this.content.length <= maxlength) {
         return this.content;
       } else {
         return this.content.substr(0, maxlength - 10) + "...(続きを読む）";
       }
+    },
+  },
+  watch: {
+    menuSelection(val) {
+      if (val == this.workId) this.dialog = true;
     },
   },
 };

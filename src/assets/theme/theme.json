@@ -28,6 +28,24 @@
   },
   {
     "id": 4,
+    "grade": "3",
+    "penname": "おだやかじんせい",
+    "title": "witch",
+    "tool": "photoshop",
+    "caption": "大きい帽子はとても良い",
+    "fileName": "おだやかじんせいtheme.jpg"
+  },
+  {
+    "id": 5,
+    "grade": "3",
+    "penname": "おだやかじんせい",
+    "title": "「曲者?!」",
+    "tool": "photoshop",
+    "caption": "「出会え、出会え！！」",
+    "fileName": "おだやかじんせいtheme2.jpg"
+  },
+  {
+    "id": 6,
     "grade": "2",
     "penname": "シノバ",
     "title": "乙女座",
@@ -36,7 +54,7 @@
     "fileName": "シノバtheme.jpg"
   },
   {
-    "id": 5,
+    "id": 7,
     "grade": "4",
     "penname": "かはら",
     "title": "星の海",
@@ -45,7 +63,7 @@
     "fileName": "かはらthema.jpg"
   },
   {
-    "id": 6,
+    "id": 8,
     "grade": "2",
     "penname": "れん",
     "title": "星々瞬く夜に",
@@ -54,7 +72,7 @@
     "fileName": "れんtheme.jpg"
   },
   {
-    "id": 7,
+    "id": 9,
     "grade": "M1",
     "penname": "さくくね",
     "title": "黒星を喫する",
@@ -63,7 +81,7 @@
     "fileName": "さくくねtheme.jpg"
   },
   {
-    "id": 8,
+    "id": 10,
     "grade": "2",
     "penname": "すみか",
     "title": "✨",
@@ -72,7 +90,7 @@
     "fileName": "すみかtheme.jpg"
   },
   {
-    "id": 9,
+    "id": 11,
     "grade": "2",
     "penname": "S氏",
     "title": "みずがめ通りの夜と星",
@@ -81,7 +99,7 @@
     "fileName": "S氏theme.jpg"
   },
   {
-    "id": 10,
+    "id": 12,
     "grade": "4",
     "penname": "しも。",
     "title": "ダイダッソウ",
@@ -90,7 +108,7 @@
     "fileName": "しも。theme.jpeg"
   },
   {
-    "id": 11,
+    "id": 13,
     "grade": "2",
     "penname": "あかちゃん",
     "title": "餅つきに飽きたウサギ",
@@ -99,7 +117,7 @@
     "fileName": "あかちゃんtheme.jpg"
   },
   {
-    "id": 12,
+    "id": 14,
     "grade": "2",
     "penname": "Beorinn",
     "title": "月の巫女",

@@ -6,21 +6,23 @@
     <v-container fluid>
       <v-row>
         <v-card class="mx-auto" tile>
-          <v-list dense two-line>
-            <v-subheader>目次</v-subheader>
-            <v-list-item-group color="primary">
+          <v-list dense two-line width="500">
+            <v-list-group color="primary">
+              <template v-slot:activator>
+                <v-list-item-title>目次</v-list-item-title>
+              </template>
               <v-list-item
                 href="#"
                 v-for="(w, i) in works"
                 :key="i"
-                @click="Scroll(w.id)"
+                @click="scroll(w.id)"
               >
                 <v-list-item-content>
                   <v-list-item-title>{{ w.title }}</v-list-item-title>
                   <v-list-item-subtitle>{{ w.penname }}</v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
-            </v-list-item-group>
+            </v-list-group>
           </v-list>
         </v-card>
       </v-row>
@@ -36,8 +38,9 @@
           md="3"
           lg="3"
           xl="3"
+          :id="w.id"
         >
-          <Viewer :work="w" :workId="w.id" type="theme" :id="w.id" />
+          <Viewer :work="w" :workId="w.id" type="theme" />
         </v-col>
       </v-row>
     </v-container>
@@ -61,13 +64,20 @@ export default {
     loadImg(fileName) {
       return require(`@/assets/theme/${fileName}`);
     },
-    Scroll(num) {
+    scroll(num) {
       event.preventDefault();
       this.$SmoothScroll(document.getElementById(num), 1200, null, null, "y");
+      setTimeout(
+        () => {
+          this.$store.commit("changeMenuSelection", num);
+        },
+        1000,
+        "num"
+      );
     },
   },
   computed: {
-    shortenedContent: function () {
+    shortenedContent: function() {
       let maxlength = 100;
       if (this.content.length <= maxlength) {
         return this.content;
