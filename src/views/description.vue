@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <div>
     <v-container py-10>
       <v-row justify="center" class="py-16">
         <v-col cols="9" class="py-10">
@@ -18,7 +18,7 @@
 
     <!-- パネル展説明 -->
 
-    <v-sheet class="py-10 px-8" color="grey lighten-3">
+    <v-sheet class="py-10 px-8" color="#D5EEFF">
       <!-- <v-overlay absolute> -->
       <v-row justify="center">
         <v-col cols="9">
@@ -117,7 +117,7 @@
 
     <!-- オフセ本説明 -->
 
-    <v-sheet class="py-10 px-8 my-16" color="grey lighten-3">
+    <v-sheet class="py-10 px-8 my-16" color="#D5EEFF">
       <v-row justify="center">
         <v-col cols="9">
           <div class="font-weight-black text-center text-h4">
@@ -170,7 +170,7 @@
         </v-col>
       </v-row>
     </v-sheet>
-  </v-container>
+  </div>
 </template>
 
 <script>
