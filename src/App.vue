@@ -9,8 +9,12 @@
           <v-icon>mdi-home</v-icon>
         </v-tab>
 
-        <v-tab to="/panel">
-          パネル展
+        <v-tab to="/theme">
+          テーマパネル
+          <v-icon>mdi-weather-night</v-icon>
+        </v-tab>
+        <v-tab to="/free">
+          フリーパネル
           <v-icon>mdi-brush</v-icon>
         </v-tab>
 
@@ -29,7 +33,7 @@
 
 <script>
 export default {
-  name: 'App',
+  name: "App",
 
   components: {},
 
