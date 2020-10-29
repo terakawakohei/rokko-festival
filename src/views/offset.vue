@@ -68,7 +68,7 @@
 
             <v-row align="center" justify="space-around">
               <v-card
-                href="https://kucc-rokkofestival.herokuapp.com/bibi/?book=contents.epub"
+                href="https://kucc-rokko-festival.herokuapp.com/bibi/?book=contents.epub"
                 width="50%"
               >
                 <v-img :src="loadImg('みーはー表紙.jpg')"></v-img>
@@ -90,25 +90,13 @@
 
             <v-row align="center" justify="space-around">
               <v-card
-                href="https://kucc-rokkofestival.herokuapp.com/bibi/?book=Miserables.epub"
+                href="https://kucc-rokko-festival.herokuapp.com/bibi/?book=Miserables.epub"
                 width="50%"
               >
                 <v-img :src="loadImg('voom表紙.jpg')"></v-img>
               </v-card>
             </v-row>
           </v-sheet>
-          <v-card
-            href="https://kucc-rokkofestival.herokuapp.com/bibi/?book=Hokusetsu-no-sanbika.epub"
-            width="50%"
-          >
-            <v-img :src="loadImg('voom表紙.jpg')"></v-img>
-          </v-card>
-          <v-card
-            href="https://kucc-rokkofestival.herokuapp.com/bibi/?book=Kazakstan-kenbunnroku.epub"
-            width="50%"
-          >
-            <v-img :src="loadImg('voom表紙.jpg')"></v-img>
-          </v-card>
         </v-col>
       </v-row>
     </v-sheet>
