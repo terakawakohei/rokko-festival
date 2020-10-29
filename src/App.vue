@@ -97,6 +97,9 @@
     <v-main>
       <router-view />
     </v-main>
+    <v-snackbar bottom v-model="snackbarVisible">
+      {{ this.$store.getters["message"] }}
+    </v-snackbar>
     <Footer />
     <v-bottom-navigation class="py-3" fixed :value="value" color="#78BBE6">
       <v-btn to="/">
@@ -131,6 +134,17 @@ export default {
   name: "App",
 
   components: { Footer },
+  computed: {
+    // snackbarが自動でfalseに設定するためセッタを用意して、明示的にdispatchからOffするようにする
+    snackbarVisible: {
+      get() {
+        return this.$store.state.isEnable;
+      },
+      set() {
+        return this.$store.dispatch("snackOff");
+      },
+    },
+  },
 
   data: () => ({
     drawer: false,

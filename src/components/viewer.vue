@@ -49,15 +49,6 @@
               <div>投票する</div>
             </v-btn>
           </v-row>
-          <v-snackbar v-model="snackbar" :timeout="timeout">
-            投票しました
-
-            <template v-slot:action="{ attrs }">
-              <v-btn color="blue" text v-bind="attrs" @click="snackbar = false">
-                閉じる
-              </v-btn>
-            </template>
-          </v-snackbar>
         </v-card-text>
         <v-divider></v-divider>
         <v-textarea
@@ -82,15 +73,6 @@
           <v-icon color="white">mdi-send</v-icon>
         </v-btn>
 
-        <v-snackbar v-model="snackbar2" :timeout="timeout">
-          送信しました
-
-          <template v-slot:action="{ attrs }">
-            <v-btn color="blue" text v-bind="attrs" @click="snackbar2 = false">
-              閉じる
-            </v-btn>
-          </template>
-        </v-snackbar>
         <v-divider></v-divider>
         <v-card-actions>
           <v-spacer></v-spacer>
@@ -114,8 +96,6 @@ import theme from "@/assets/theme/theme.json";
 export default {
   data: () => ({
     dialog: false,
-    snackbar: false,
-    snackbar2: false,
     voteDisabled: false,
     sendDisabled: false,
     timeout: 3000,
@@ -132,15 +112,17 @@ export default {
       return require(`@/assets/${this.type}/${fileName}`);
     },
     vote() {
-      this.snackbar = true;
       this.voteDisabled = true;
+      this.$store.dispatch("setMessage", "投票しました");
+      this.$store.dispatch("snackOn");
     },
     sendComment() {
       if (this.comment != "") {
         this.axios.post(
           `https://rokko-festival-server.herokuapp.com/comment/${this.workId}/${this.comment}`
         );
-        this.snackbar2 = true;
+        this.$store.dispatch("setMessage", "送信しました");
+        this.$store.dispatch("snackOn");
         this.sendDisabled = true;
         this.comment = "";
       }
