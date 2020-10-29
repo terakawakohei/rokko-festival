@@ -97,6 +97,18 @@
               </v-card>
             </v-row>
           </v-sheet>
+          <v-card
+            href="https://kucc-rokkofestival.herokuapp.com/bibi/?book=maruyama.epub"
+            width="50%"
+          >
+            <v-img :src="loadImg('voom表紙.jpg')"></v-img>
+          </v-card>
+          <v-card
+            href="https://kucc-rokkofestival.herokuapp.com/bibi/?book=contents.zip"
+            width="50%"
+          >
+            <v-img :src="loadImg('voom表紙.jpg')"></v-img>
+          </v-card>
         </v-col>
       </v-row>
     </v-sheet>
@@ -129,7 +141,7 @@
         data-bibi-style="width: 50%; height: 400px;"
         data-bibi-start-in-new-window="mobile"
         >モバイルのみウィンドウ表示</a -->
-    >
+
     <!-- <a
         href="https://kucc-rokkofestival.herokuapp.com/bibi/?book=Miserables.epub"
       >
@@ -137,10 +149,10 @@
           <v-img :src="imageurl" class="grey lighten-2"> </v-img> </v-card
       ></a> -->
 
-    <!-- <div
-        is="script"
-        src="https://kucc-rokkofestival.herokuapp.com/bibi/and/jo.js"
-      ></div> -->
+    <div
+      is="script"
+      src="https://kucc-rokkofestival.herokuapp.com/bibi/and/jo.js"
+    ></div>
     <!-- </v-row> -->
   </div>
 </template>
