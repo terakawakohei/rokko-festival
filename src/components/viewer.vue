@@ -113,6 +113,25 @@ export default {
     },
     vote() {
       this.voteDisabled = true;
+      this.axios
+        .get(
+          `https://rokko-festival-server.herokuapp.com/vote/${this.type}/${this.workId}`
+        )
+        .then((response) => {
+          console.log(response.data);
+
+          if (response.data > 0) {
+            console.log("putが走ってる");
+            this.axios.put(
+              `https://rokko-festival-server.herokuapp.com/vote/${this.type}/${this.workId}`
+            );
+          } else {
+            console.log("postが走ってる");
+            this.axios.post(
+              `https://rokko-festival-server.herokuapp.com/vote/${this.type}/${this.workId}`
+            );
+          }
+        });
       this.$store.dispatch("setMessage", "投票しました");
       this.$store.dispatch("snackOn");
     },
@@ -128,13 +147,7 @@ export default {
       }
     },
   },
-  mounted: function() {
-    console.log("見えて欲しい");
-    this.axios
-      .get("https://rokko-festival-server.herokuapp.com/products")
-      .then((response) => console.log(response))
-      .catch((response) => console.log(response));
-  },
+  mounted: function() {},
   // async comment(words) {
   // 	await this.$axios.put('/api/v1/student/' + this.data.StudentID, {
   // 		DeletedAt: null,
@@ -150,14 +163,6 @@ export default {
   computed: {
     menuSelection: function() {
       return this.$store.state.menuSelection;
-    },
-    shortenedContent: function() {
-      let maxlength = 100;
-      if (this.content.length <= maxlength) {
-        return this.content;
-      } else {
-        return this.content.substr(0, maxlength - 10) + "...(続きを読む）";
-      }
     },
   },
   watch: {
