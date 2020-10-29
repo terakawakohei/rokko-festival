@@ -1,47 +1,56 @@
 <template>
-  <div>
+  <v-container>
     <v-row justify="center">
-      <h1 class="display-1 font-weight-black padding">
-        フリーパネル
-      </h1>
+      <h1 class="display-1 font-weight-black padding">フリーパネル</h1>
     </v-row>
     <v-container fluid>
       <v-row>
         <v-card class="mx-auto" tile>
-          <v-list dense two-line>
-            <v-subheader>目次</v-subheader>
-            <v-list-item-group color="primary">
-              <v-list-item v-for="(w, i) in works" :key="i">
+          <v-list dense two-line width="500">
+            <v-list-group color="primary">
+              <template v-slot:activator>
+                <v-list-item-title>目次</v-list-item-title>
+              </template>
+              <v-list-item
+                href="#"
+                v-for="(w, i) in works"
+                :key="i"
+                @click="scroll(w.id)"
+              >
                 <v-list-item-content>
-                  <v-list-item-title v-html="w.title"></v-list-item-title>
-                  <v-list-item-subtitle v-html="w.grade"></v-list-item-subtitle>
+                  <v-list-item-title>{{ w.title }}</v-list-item-title>
+                  <v-list-item-subtitle>{{ w.penname }}</v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
-            </v-list-item-group>
+            </v-list-group>
           </v-list>
         </v-card>
       </v-row>
     </v-container>
 
     <v-container fluid>
-      <v-row>
+      <v-row space-around justify="center">
         <v-col
           v-for="(w, i) in works"
           :key="i"
-          class="d-flex child-flex"
           cols="6"
+          sm="6"
+          md="3"
+          lg="3"
+          xl="3"
+          :id="w.id"
         >
           <Viewer :work="w" :workId="w.id" type="free" />
         </v-col>
       </v-row>
     </v-container>
-  </div>
+  </v-container>
 </template>
 
 <script>
 // @ is an alias to /src
-import free from '@/assets/free/free.json';
-import Viewer from '@/components/viewer.vue';
+import free from "@/assets/free/free.json";
+import Viewer from "@/components/viewer.vue";
 
 export default {
   data: () => ({
@@ -55,15 +64,16 @@ export default {
     loadImg(fileName) {
       return require(`@/assets/free/${fileName}`);
     },
-  },
-  computed: {
-    shortenedContent: function() {
-      let maxlength = 100;
-      if (this.content.length <= maxlength) {
-        return this.content;
-      } else {
-        return this.content.substr(0, maxlength - 10) + '...(続きを読む）';
-      }
+    scroll(num) {
+      event.preventDefault();
+      this.$SmoothScroll(document.getElementById(num), 1200, null, null, "y");
+      setTimeout(
+        () => {
+          this.$store.commit("changeMenuSelection", num);
+        },
+        1000,
+        "num"
+      );
     },
   },
 };
