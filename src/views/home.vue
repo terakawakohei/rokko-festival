@@ -11,50 +11,47 @@
     </v-carousel>
     <Description />
     <Link />
-    <Footer />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Description from '@/views/description.vue';
-import Link from '@/views/link.vue';
-import Footer from '@/components/footer.vue';
+import Description from "@/views/description.vue";
+import Link from "@/views/link.vue";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
     Description,
     Link,
-    Footer,
   },
   data() {
     return {
       items: [
         {
-          src: require('@/assets/パネル展4.jpg'),
+          src: require("@/assets/パネル展4.jpg"),
         },
         {
-          src: require('@/assets/パネル展5.jpg'),
+          src: require("@/assets/パネル展5.jpg"),
         },
         {
-          src: require('@/assets/パネル展1.jpg'),
+          src: require("@/assets/パネル展1.jpg"),
         },
         {
-          src: require('@/assets/パネル展2.jpg'),
+          src: require("@/assets/パネル展2.jpg"),
         },
         {
-          src: require('@/assets/パネル展3.jpg'),
+          src: require("@/assets/パネル展3.jpg"),
         },
       ],
       colors: [
-        'indigo',
-        'warning',
-        'pink darken-2',
-        'red lighten-1',
-        'deep-purple accent-4',
+        "indigo",
+        "warning",
+        "pink darken-2",
+        "red lighten-1",
+        "deep-purple accent-4",
       ],
-      slides: ['First', 'Second', 'Third', 'Fourth', 'Fifth'],
+      slides: ["First", "Second", "Third", "Fourth", "Fifth"],
     };
   },
 };

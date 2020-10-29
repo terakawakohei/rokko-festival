@@ -17,6 +17,7 @@
       ⓒ{{ new Date().getFullYear() }} —
       <strong>神戸大学漫画研究会</strong>
     </v-col>
+    <v-sheet class="pb-12 px-8" color="grey lighten-3"> </v-sheet>
   </v-footer>
   <!-- <v-container py-10>
     <v-row justify="center" cols="3">
