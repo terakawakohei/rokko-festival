@@ -119,7 +119,7 @@ export default {
     sendComment() {
       if (this.comment != "") {
         this.axios.post(
-          `https://rokko-festival-server.herokuapp.com/comment/${this.workId}/${this.comment}`
+          `https://rokko-festival-server.herokuapp.com/comment/${this.type}/${this.workId}/${this.comment}`
         );
         this.$store.dispatch("setMessage", "送信しました");
         this.$store.dispatch("snackOn");
