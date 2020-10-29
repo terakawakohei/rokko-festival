@@ -4,9 +4,9 @@
       <h1 class="display-1 font-weight-black padding">フリーパネル</h1>
     </v-row>
     <v-container fluid>
-      <v-row>
+      <v-row justify="center">
         <v-card class="mx-auto" tile>
-          <v-list dense two-line width="500">
+          <v-list dense two-line min-width="350">
             <v-list-group color="primary">
               <template v-slot:activator>
                 <v-list-item-title>目次</v-list-item-title>

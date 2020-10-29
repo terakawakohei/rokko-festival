@@ -69,7 +69,7 @@
             <v-row align="center" justify="space-around">
               <v-card
                 href="https://kucc-rokko-festival.herokuapp.com/bibi/?book=contents.epub"
-                width="50%"
+                max-width="250"
               >
                 <v-img :src="loadImg('みーはー表紙.jpg')"></v-img>
               </v-card>
@@ -91,7 +91,7 @@
             <v-row align="center" justify="space-around">
               <v-card
                 href="https://kucc-rokko-festival.herokuapp.com/bibi/?book=Miserables.epub"
-                width="50%"
+                max-width="250"
               >
                 <v-img :src="loadImg('voom表紙.jpg')"></v-img>
               </v-card>
