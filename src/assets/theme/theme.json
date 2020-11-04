@@ -41,7 +41,7 @@
     "penname": "おだやかじんせい",
     "title": "「曲者?!」",
     "tool": "photoshop",
-    "caption": "「出会え、出会え！！」",
+    "caption": "水面に映る満月を描きました",
     "fileName": "おだやかじんせいtheme2.jpg"
   },
   {
@@ -124,5 +124,41 @@
     "tool": "",
     "caption": "最初は星に線をつなげて魔方陣を描くような形にしようと思っていましたが、月も星に含まれると思ってこっちに変えました。杖の装飾は迷走した結果なので、特に意味はないです。デジタルで書きました。",
     "fileName": "Beorinntheme.jpg"
+  },
+  {
+    "id": 15,
+    "grade": "2",
+    "penname": "杏",
+    "title": "リンドウ",
+    "tool": "",
+    "caption": "タロットカードに描かれた星の輝きは内に秘めたるものらしくて、””愛””だ………となりました。愛の絵です。外枠楽しかった。",
+    "fileName": "杏theme.jpeg"
+  },
+  {
+    "id": 16,
+    "grade": "M2",
+    "penname": "しょう",
+    "title": "星みたいに輝きたい女の子",
+    "tool": "",
+    "caption": "デジタルの初心者です",
+    "fileName": "しょうtheme.jpg"
+  },
+  {
+    "id": 17,
+    "grade": "M1",
+    "penname": "takio",
+    "title": "Dawn the Peri0d",
+    "tool": "",
+    "caption": "夜明けと共に紡がれる新しい物語を_____",
+    "fileName": "takiotheme.jpeg"
+  },
+  {
+    "id": 18,
+    "grade": "2",
+    "penname": "そういちろう",
+    "title": "終末の星",
+    "tool": "CLIPSTUDIO",
+    "caption": "荒廃した惑星をイメージして描きました。少しでも雰囲気を感じて貰えれば幸いです。",
+    "fileName": "そういちろうtheme.jpeg"
   }
 ]

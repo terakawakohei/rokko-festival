@@ -38,20 +38,8 @@
       </v-row>
     </v-sheet>
 
-    <v-sheet class="py-10 px-8" color="grey lighten-3">
+    <v-sheet class="py-15 px-8" color="grey lighten-3">
       <!-- <v-overlay absolute> -->
-      <v-row justify="center">
-        <v-col cols="9">
-          <div class="font-weight-black text-center text-h4">
-            パネル展
-          </div>
-        </v-col>
-        <v-col cols="11">
-          <p class=" font-weight-black text-center">
-            お題に沿って描かれたテーマパネル、部員が自由にテーマを決めて描くフリーパネルの二種類があります！
-          </p>
-        </v-col>
-      </v-row>
 
       <v-row justify="space-around">
         <v-col cols="12" md="5">
@@ -59,11 +47,20 @@
             class="pa-10"
             color="white lighten-3"
             rounded="xl"
-            height="500"
+            height="600"
           >
-            <div class=" font-weight-black text-center text-h6 pb-4">
-              みーはー
-            </div>
+            <v-row justify="center">
+              <v-col cols="9">
+                <div class="font-weight-black text-center text-h6 pb-4">
+                  みーはー
+                </div>
+              </v-col>
+              <v-col cols="11">
+                <p class=" font-weight-black text-center">
+                  お題「悪魔」に沿ったイラストが収録されています
+                </p>
+              </v-col>
+            </v-row>
             <div></div>
 
             <v-row align="center" justify="space-around">
@@ -81,11 +78,20 @@
             class="pa-10"
             color="white lighten-3"
             rounded="xl"
-            height="500"
+            height="600"
           >
-            <div class=" font-weight-black text-center text-h6 pb-4">
-              voom+
-            </div>
+            <v-row justify="center">
+              <v-col cols="9">
+                <div class="font-weight-black text-center text-h6 pb-4">
+                  voom+
+                </div>
+              </v-col>
+              <v-col cols="11">
+                <p class=" font-weight-black text-center">
+                  部員の描いた漫画、小説が収録されています
+                </p>
+              </v-col>
+            </v-row>
             <div></div>
 
             <v-row align="center" justify="space-around">

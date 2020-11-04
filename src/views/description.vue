@@ -137,19 +137,24 @@
             class="pa-10"
             color="white lighten-3"
             rounded="xl"
-            height="350"
+            height="400"
           >
             <div></div>
-            <v-sheet rounded="xl" class="mx-auto" height="100" width="100">
+            <p class=" font-weight-black text-center">
+              今年のテーマは「悪魔」です
+            </p>
+            <div></div>
+            <v-sheet rounded="xl" class="mx-auto" height="50" width="100">
               <v-row align="center" justify="space-around">
                 <v-icon x-large color="orange">mdi-emoticon-devil</v-icon>
               </v-row></v-sheet
             >
 
-            <div></div>
-            <p class=" font-weight-black text-center">
-              今年のテーマは「悪魔」です
-            </p>
+            <v-row align="center" justify="space-around">
+              <v-card elevation="0" max-width="250">
+                <v-img :src="loadImg('オフセ.png')"></v-img>
+              </v-card>
+            </v-row>
             <v-row align="center" justify="space-around">
               <router-link to="/offset" tag="button">
                 <v-btn
@@ -176,6 +181,11 @@
 <script>
 export default {
   name: "description",
+  methods: {
+    loadImg(fileName) {
+      return require(`@/assets/${fileName}`);
+    },
+  },
 };
 </script>
 <style>

@@ -13,7 +13,10 @@
       新歓活動中！
     </v-col>
     <v-divider></v-divider>
-    <v-col class="text-center basil small font-italic text-caption" cols="12">
+    <v-col
+      class="pb-10 text-center basil small font-italic text-caption"
+      cols="12"
+    >
       ⓒ{{ new Date().getFullYear() }} —
       <strong>神戸大学漫画研究会</strong>
     </v-col>

@@ -97,7 +97,7 @@
     <v-main>
       <router-view />
     </v-main>
-    <v-snackbar bottom v-model="snackbarVisible">
+    <v-snackbar top v-model="snackbarVisible">
       {{ this.$store.getters["message"] }}
     </v-snackbar>
     <Footer />
