@@ -1,8 +1,43 @@
 <template>
   <v-container>
-    <v-row justify="center">
-      <h1 class="display-1 font-weight-black padding">フリーパネル</h1>
-    </v-row>
+    <v-sheet class="py-10 px-8 my-16" color="grey lighten-3">
+      <v-row justify="center">
+        <v-col cols="9">
+          <div class="font-weight-black text-center text-h4 mb-7">
+            フリーパネル
+          </div>
+        </v-col>
+      </v-row>
+      <v-row justify="space-around">
+        <v-col cols="12" md="5">
+          <v-sheet
+            class="pa-10"
+            color="white lighten-3"
+            rounded="xl"
+            height="240"
+          >
+            <div></div>
+            <v-sheet rounded="xl" class="mx-auto" height="100" width="100">
+              <v-row align="center" justify="space-around">
+                <v-col cols="5" md="5">
+                  <v-icon x-large color="orange">mdi-vote</v-icon>
+                </v-col>
+                <v-col cols="5" md="5">
+                  <v-icon x-large color="orange"
+                    >mdi-comment-multiple-outline</v-icon
+                  >
+                </v-col>
+              </v-row></v-sheet
+            >
+
+            <div></div>
+            <p class=" font-weight-black text-center mt-2">
+              気に入った作品には投票＆コメントをお願いします！
+            </p>
+          </v-sheet>
+        </v-col>
+      </v-row>
+    </v-sheet>
     <v-container fluid>
       <v-row justify="center">
         <v-card class="mx-auto" tile>
