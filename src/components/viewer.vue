@@ -37,7 +37,7 @@
           <v-row class="ml-2">
             {{ work.caption }}
           </v-row>
-          <v-divider class="mt-4"></v-divider>
+          <v-divider class="mt-4 my-2"></v-divider>
           <v-row justify="center">
             <v-btn
               @click="vote()"
@@ -50,7 +50,7 @@
             </v-btn>
           </v-row>
         </v-card-text>
-        <v-divider></v-divider>
+        <v-divider class="mx-4 my-2"></v-divider>
         <v-textarea
           prepend-inner-icon="mdi-comment"
           class="pt-2 mx-2"
