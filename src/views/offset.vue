@@ -47,7 +47,7 @@
             class="pa-10"
             color="white lighten-3"
             rounded="xl"
-            height="600"
+            height="700"
           >
             <v-row justify="center">
               <v-col cols="9">
@@ -70,6 +70,15 @@
               >
                 <v-img :src="loadImg('みーはー表紙.jpg')"></v-img>
               </v-card>
+            </v-row>
+            <v-row justify="center" class="pt-8">
+              <v-col cols="11">
+                <p class=" font-weight-black text-center text-subtitle-2">
+                  みーはーに関する感想はこちらから!
+                </p>
+              </v-col>
+
+              <Impressions type="みーはー" />
             </v-row>
           </v-sheet>
         </v-col>
@@ -153,10 +162,12 @@
 
 <script>
 // @ is an alias to /src
-
+import Impressions from "@/components/impressions.vue";
 export default {
   name: "offset",
-  components: {},
+  components: {
+    Impressions,
+  },
 
   created() {
     let recaptchaScript = document.createElement("script");

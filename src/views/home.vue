@@ -11,6 +11,7 @@
     </v-carousel>
     <Description />
     <Link />
+    <Questionnaire />
   </div>
 </template>
 
@@ -18,12 +19,14 @@
 // @ is an alias to /src
 import Description from "@/views/description.vue";
 import Link from "@/views/link.vue";
+import Questionnaire from "@/components/questionnaire.vue";
 
 export default {
   name: "home",
   components: {
     Description,
     Link,
+    Questionnaire,
   },
   data() {
     return {
