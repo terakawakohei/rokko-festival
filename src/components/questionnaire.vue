@@ -2,7 +2,7 @@
   <v-sheet class="py-10 px-8 my-16" color="grey lighten-3">
     <v-row justify="center">
       <v-col cols="11">
-        <p class=" font-weight-black text-center">
+        <p class=" font-weight-black text-center text-h6">
           Web展示に関するアンケートにご協力ください
         </p>
       </v-col>
@@ -17,23 +17,33 @@
         </template>
         <v-card>
           <v-card-title>
-            <span class="headline">Web展示会についてのアンケート</span>
+            <span class="headline text-subtitle-1"
+              >Web展示会についてのアンケート</span
+            >
           </v-card-title>
           <v-card-text>
             <v-container>
+              <div class="font-weight-black text-center text-subtitle-2">
+                性別
+              </div>
               <v-row justify="center">
                 <v-radio-group v-model="gender" row>
                   <v-radio label="男" value="male"></v-radio>
                   <v-radio label="女" value="female"></v-radio>
                 </v-radio-group>
                 <v-col cols="12">
+                  <v-divider class="my-7"></v-divider>
+                  <div class="font-weight-black text-center text-subtitle-2">
+                    年齢
+                  </div>
                   <v-select
                     :items="ages"
                     v-model="age"
-                    label="年齢"
+                    label=""
                     dense
                   ></v-select>
                 </v-col>
+                <v-divider class="my-7"></v-divider>
                 <div class="font-weight-black text-center text-subtitle-2">
                   展示会の印象をお答えください.
                 </div>
@@ -46,6 +56,7 @@
                       large
                     ></v-rating>
                   </div>
+                  <v-divider class="my-7"></v-divider>
                 </v-col>
                 <div class="font-weight-black text-center text-subtitle-2">
                   その他展示に関するご意見、ご感想などございましたらご自由にお書きください
