@@ -79,6 +79,7 @@
         </v-col>
       </v-row>
     </v-container>
+    <Questionnaire />
   </v-container>
 </template>
 
@@ -86,6 +87,7 @@
 // @ is an alias to /src
 import free from "@/assets/free/free.json";
 import Viewer from "@/components/viewer.vue";
+import Questionnaire from "@/components/questionnaire.vue";
 
 export default {
   data: () => ({
@@ -94,6 +96,7 @@ export default {
   }),
   components: {
     Viewer,
+    Questionnaire,
   },
   methods: {
     loadImg(fileName) {

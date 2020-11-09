@@ -22,12 +22,17 @@
           <v-card-text>
             <v-container>
               <v-row justify="center">
-                <v-radio-group name="entry.777886392_sentinel" row>
-                  <v-radio label="男" value="radio-1"></v-radio>
-                  <v-radio label="女" value="radio-2"></v-radio>
+                <v-radio-group v-model="gender" row>
+                  <v-radio label="男" value="male"></v-radio>
+                  <v-radio label="女" value="female"></v-radio>
                 </v-radio-group>
                 <v-col cols="12">
-                  <v-select :items="items" label="年齢" dense></v-select>
+                  <v-select
+                    :items="ages"
+                    v-model="age"
+                    label="年齢"
+                    dense
+                  ></v-select>
                 </v-col>
                 <div class="font-weight-black text-center text-subtitle-2">
                   展示会の印象をお答えください.
@@ -35,7 +40,7 @@
                 <v-col cols="12">
                   <div class="text-center">
                     <v-rating
-                      name="entry.933654273_sentinel"
+                      v-model="rate"
                       background-color="orange lighten-3"
                       color="orange"
                       large
@@ -46,28 +51,17 @@
                   その他展示に関するご意見、ご感想などございましたらご自由にお書きください
                 </div>
                 <v-col cols="12">
-                  <v-textarea
-                    name="entry.190625869"
-                    label=""
-                    value=""
-                    hint="Hint text"
-                  ></v-textarea>
+                  <v-textarea v-model="opinion" label=""></v-textarea>
                 </v-col>
               </v-row>
             </v-container>
-            <small>*indicates required field</small>
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
             <v-btn color="blue darken-1" text @click="dialog = false">
               閉じる
             </v-btn>
-            <v-btn
-              color="blue darken-1"
-              text
-              type="submit"
-              @click="dialog = false"
-            >
+            <v-btn color="blue darken-1" text type="submit" @click="send()">
               送信
             </v-btn>
           </v-card-actions>
@@ -82,9 +76,27 @@
 export default {
   data: () => ({
     dialog: false,
-    items: ["~19", "20~", "30~", "40~", "50~"],
+    ages: ["~19", "20~29", "30~39", "40~49", "50~"],
+    age: "",
+    gender: "",
+    rate: Number,
+    opinion: "",
   }),
-  methods: {},
+  methods: {
+    send() {
+      if (this.opinion != "") {
+        this.axios.post(
+          `https://rokko-festival-server.herokuapp.com/questionnaire/${this.age}/${this.gender}/${this.rate}/${this.opinion}`
+        );
+        this.$store.dispatch("setMessage", "送信しました");
+        this.$store.dispatch("snackOn");
+        this.opinion = "";
+        this.rate = 0;
+        (this.gender = ""), (this.age = "");
+      }
+      this.dialog = false;
+    },
+  },
 };
 </script>
 <style scoped></style>

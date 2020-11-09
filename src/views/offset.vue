@@ -47,7 +47,7 @@
             class="pa-10"
             color="white lighten-3"
             rounded="xl"
-            height="700"
+            height="730"
           >
             <v-row justify="center">
               <v-col cols="9">
@@ -78,7 +78,7 @@
                 </p>
               </v-col>
 
-              <Impressions type="みーはー" />
+              <Impressions type="mi-ha-" />
             </v-row>
           </v-sheet>
         </v-col>
@@ -87,7 +87,7 @@
             class="pa-10"
             color="white lighten-3"
             rounded="xl"
-            height="600"
+            height="730"
           >
             <v-row justify="center">
               <v-col cols="9">
@@ -111,9 +111,19 @@
                 <v-img :src="loadImg('voom表紙.jpg')"></v-img>
               </v-card>
             </v-row>
+            <v-row justify="center" class="pt-8">
+              <v-col cols="11">
+                <p class=" font-weight-black text-center text-subtitle-2">
+                  voomに関する感想はこちらから!
+                </p>
+              </v-col>
+
+              <Impressions type="voom" />
+            </v-row>
           </v-sheet>
         </v-col>
       </v-row>
+      <Questionnaire />
     </v-sheet>
 
     <!-- <a
@@ -163,10 +173,12 @@
 <script>
 // @ is an alias to /src
 import Impressions from "@/components/impressions.vue";
+import Questionnaire from "@/components/questionnaire.vue";
 export default {
   name: "offset",
   components: {
     Impressions,
+    Questionnaire,
   },
 
   created() {
