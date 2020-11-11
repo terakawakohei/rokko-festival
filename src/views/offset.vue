@@ -9,7 +9,10 @@
         </v-col>
         <v-col cols="11">
           <p class=" font-weight-black text-center">
-            例年、部員描いたイラストや漫画をオフセット本として六甲祭で販売しています！
+            例年、部員の描いたイラストや漫画をオフセット本として六甲祭で販売しています。
+          </p>
+          <p class=" font-weight-black text-center">
+            今年は電子書籍の形で公開します！
           </p>
         </v-col>
       </v-row>
@@ -51,13 +54,13 @@
           >
             <v-row justify="center">
               <v-col cols="9">
-                <div class="font-weight-black text-center text-h6 pb-4">
+                <div class="font-weight-black text-center text-h5 pb-4">
                   みーはー
                 </div>
               </v-col>
               <v-col cols="11">
                 <p class=" font-weight-black text-center">
-                  お題「悪魔」に沿ったイラストが収録されています
+                  部員の描いた漫画、小説が収録されています
                 </p>
               </v-col>
             </v-row>
@@ -91,13 +94,13 @@
           >
             <v-row justify="center">
               <v-col cols="9">
-                <div class="font-weight-black text-center text-h6 pb-4">
+                <div class="font-weight-black text-center text-h5 pb-4">
                   voom+
                 </div>
               </v-col>
               <v-col cols="11">
                 <p class=" font-weight-black text-center">
-                  部員の描いた漫画、小説が収録されています
+                  お題「悪魔」に沿ったイラストが収録されています
                 </p>
               </v-col>
             </v-row>
@@ -105,7 +108,7 @@
 
             <v-row align="center" justify="space-around">
               <v-card
-                href="https://kucc-rokko-festival.herokuapp.com/bibi/?book=Miserables.epub"
+                href="https://kucc-rokko-festival.herokuapp.com/bibi/?book=voom+ver1.epub"
                 max-width="250"
               >
                 <v-img :src="loadImg('voom表紙.jpg')"></v-img>
