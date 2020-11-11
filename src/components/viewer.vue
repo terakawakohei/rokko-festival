@@ -42,7 +42,7 @@
             <v-btn
               @click="vote()"
               :disabled="voteDisabled"
-              outlined
+              class="white--text"
               color="#F99F48"
             >
               <v-icon>mdi-vote</v-icon>
