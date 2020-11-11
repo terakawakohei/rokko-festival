@@ -101,7 +101,13 @@
       {{ this.$store.getters["message"] }}
     </v-snackbar>
     <Footer />
-    <v-bottom-navigation class="py-3" fixed :value="value" color="#78BBE6">
+    <v-bottom-navigation
+      height="83"
+      class="py-5"
+      fixed
+      :value="value"
+      color="#78BBE6"
+    >
       <v-btn to="/">
         <span>ホーム</span>
 
