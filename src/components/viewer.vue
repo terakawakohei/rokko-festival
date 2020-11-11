@@ -42,12 +42,17 @@
             <v-btn
               @click="vote()"
               :disabled="voteDisabled"
-              class="white--text"
+              class="white--text mt-3"
               color="#F99F48"
             >
               <v-icon>mdi-vote</v-icon>
               <div>投票する</div>
             </v-btn>
+          </v-row>
+          <v-row justify="center" class="mt-5">
+            <small class=" .text-caption font-weight-thin text--secondary"
+              >*投票は1作品につき1票まで</small
+            >
           </v-row>
         </v-card-text>
         <v-divider class="mx-4 my-2"></v-divider>
