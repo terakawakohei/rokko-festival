@@ -75,6 +75,9 @@
               </v-card>
             </v-row>
             <v-row justify="center" class="pt-8">
+              <p class=" font-weight-thin text-caption text-center">
+                ※wifi環境下での閲覧をお勧めします
+              </p>
               <v-col cols="11">
                 <p class=" font-weight-black text-center text-subtitle-2">
                   みーはーに関する感想はこちらから!
@@ -115,6 +118,9 @@
               </v-card>
             </v-row>
             <v-row justify="center" class="pt-8">
+              <p class=" font-weight-thin text-caption text-center">
+                ※wifi環境下での閲覧をお勧めします
+              </p>
               <v-col cols="11">
                 <p class=" font-weight-black text-center text-subtitle-2">
                   voomに関する感想はこちらから!
