@@ -68,7 +68,6 @@
         ></v-textarea>
 
         <v-btn
-          v-if="comment != ''"
           @click="sendComment()"
           :disabled="sendDisabled"
           block
