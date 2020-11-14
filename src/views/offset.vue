@@ -68,7 +68,7 @@
 
             <v-row align="center" justify="space-around">
               <v-card
-                href="https://kucc-rokko-festival.herokuapp.com/bibi/?book=みーはー176ver2.epub"
+                href="https://kucc-rokko-festival.herokuapp.com/bibi/?book=みーはー176ver3.epub"
                 max-width="250"
               >
                 <v-img :src="loadImg('みーはー表紙.jpg')"></v-img>
