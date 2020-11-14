@@ -1,8 +1,8 @@
 <template>
   <v-dialog v-model="dialog" persistent max-width="600px">
     <template v-slot:activator="{ on, attrs }">
-      <v-btn color="white" v-bind="attrs" v-on="on">
-        <v-icon large color="orange">mdi-comment-text-outline</v-icon>
+      <v-btn color="#F99F48" v-bind="attrs" v-on="on">
+        <v-icon medium color="white">mdi-comment-text-outline</v-icon>
       </v-btn>
     </template>
     <v-card>

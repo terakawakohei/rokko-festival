@@ -50,7 +50,7 @@
             class="pa-10"
             color="white lighten-3"
             rounded="xl"
-            height="730"
+            height="750"
           >
             <v-row justify="center">
               <v-col cols="9">
@@ -93,7 +93,7 @@
             class="pa-10"
             color="white lighten-3"
             rounded="xl"
-            height="730"
+            height="750"
           >
             <v-row justify="center">
               <v-col cols="9">
