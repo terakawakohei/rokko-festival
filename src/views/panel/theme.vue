@@ -20,9 +20,6 @@
             <v-sheet rounded="xl" class="mx-auto" height="100" width="100">
               <v-row align="center" justify="space-around">
                 <v-col cols="5" md="5">
-                  <v-icon x-large color="orange">mdi-vote</v-icon>
-                </v-col>
-                <v-col cols="5" md="5">
                   <v-icon x-large color="orange"
                     >mdi-comment-multiple-outline</v-icon
                   >
@@ -32,8 +29,14 @@
 
             <div></div>
             <p class=" font-weight-black text-center mt-2">
-              気に入った作品には投票＆コメントをお願いします！
+              気に入った作品にはコメントをお願いします！
             </p>
+            <v-row justify="center">
+              <small
+                class=" .text-caption font-weight-thin text-center text--secondary"
+                >*投票は締め切りました</small
+              >
+            </v-row>
           </v-sheet>
         </v-col>
       </v-row>
