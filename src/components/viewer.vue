@@ -41,7 +41,7 @@
           <v-row justify="center">
             <v-btn
               @click="vote()"
-              :disabled="voteDisabled"
+              disabled
               class="white--text mt-3"
               color="#F99F48"
             >
@@ -51,7 +51,7 @@
           </v-row>
           <v-row justify="center" class="mt-5">
             <small class=" .text-caption font-weight-thin text--secondary"
-              >*投票は1作品につき1票まで</small
+              >*投票は締め切りました</small
             >
           </v-row>
         </v-card-text>
