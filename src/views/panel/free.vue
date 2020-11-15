@@ -14,7 +14,7 @@
             class="pa-10"
             color="white lighten-3"
             rounded="xl"
-            height="240"
+            height="260"
           >
             <div></div>
             <v-sheet rounded="xl" class="mx-auto" height="100" width="100">
