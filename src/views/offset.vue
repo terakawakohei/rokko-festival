@@ -111,7 +111,7 @@
 
             <v-row align="center" justify="space-around">
               <v-card
-                href="https://kucc-rokko-festival.herokuapp.com/bibi/?book=voom+ver1.epub"
+                href="https://kucc-rokko-festival.herokuapp.com/bibi/?book=voom+ver2.epub"
                 max-width="250"
               >
                 <v-img :src="loadImg('voom表紙.jpg')"></v-img>
