@@ -3,9 +3,9 @@
 ## 概要
 
 Vue.js+Golangでサイトを作成。
-フロントはVue-cilでプロジェクトを作成した。デプロイには
+フロントはVue-cilでプロジェクトを作成。デプロイには
 [heroku](https://dashboard.heroku.com/)
-を利用した。
+を利用
 ### 使用したもの
 * Vuetify(VueのUIライブラリ)
 * Vuex(Vueの状態管理ライブラリ)
